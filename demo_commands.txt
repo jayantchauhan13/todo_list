@@ -1,0 +1,30 @@
+PROJECT DEMO COMMANDS
+
+1. Create virtual environment
+python -m venv venv
+
+2. Activate it (Windows)
+venv\Scripts\activate
+
+3. Install Django
+pip install -r requirements.txt
+
+4. Create database tables
+python manage.py makemigrations
+python manage.py migrate
+
+5. Add sample data
+python manage.py shell < sample_data.py
+
+6. Run server
+python manage.py runserver
+
+7. Open:
+http://127.0.0.1:8000/
+
+8. Optional admin:
+python manage.py createsuperuser
+python manage.py runserver
+
+Then open:
+http://127.0.0.1:8000/admin/
